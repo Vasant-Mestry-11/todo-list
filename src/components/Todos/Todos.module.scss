@@ -1,5 +1,5 @@
 .container {
-  height: inherit;
+  height: 100vh;
   background-color: rgba(214, 214, 214, 0.984);
   display: flex;
   justify-content: center;
@@ -45,10 +45,6 @@
   border-bottom: none;
 }
 
-.completeTodo {
-  display: none;
-}
-
 .checkmark {
   width: 1.5rem;
   height: 1.5rem;
@@ -61,44 +57,4 @@
 .todo input:checked + .checkmark {
   border: 1px solid #dd2121;
   background-color: #dd2121;
-}
-
-.todoName {
-  font-size: 1.75rem;
-  font-weight: 300;
-}
-
-.footer {
-  background-color: #fff;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-top: 1px solid rgb(162, 162, 162);
-}
-
-.footerText,
-.clearCompleted {
-  font-weight: 300;
-}
-
-.clearCompleted {
-  pointer-events: none;
-  opacity: 0;
-}
-
-.btnContainer {
-  display: flex;
-  column-gap: 1rem;
-}
-
-.btn {
-  padding: 5px 10px;
-  border: 1px solid rgb(162, 162, 162);
-  border-radius: 4px;
-  font-weight: 300;
-}
-
-.btn:hover {
-  background-color: #ddd;
 }

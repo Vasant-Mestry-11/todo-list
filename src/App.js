@@ -1,10 +1,6 @@
 import React from "react";
-import Todos from "./components/Todos";
+import Todos from "./components/Todos/Todos";
 
 export function App() {
-  return (
-    <div className="todo-container">
-      <Todos />
-    </div>
-  );
+  return <Todos />;
 }
