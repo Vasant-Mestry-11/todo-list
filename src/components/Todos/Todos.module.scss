@@ -1,6 +1,8 @@
+@use "../../styles/variables";
+
 .container {
   height: 100vh;
-  background-color: rgba(214, 214, 214, 0.984);
+  background-color: variables.$body-color;
   display: flex;
   justify-content: center;
 }
@@ -8,7 +10,7 @@
 .text {
   font-size: 7rem;
   font-weight: 200;
-  color: rgba(164, 84, 128, 0.6);
+  color: variables.$text-color;
   text-align: center;
 }
 
@@ -19,7 +21,7 @@
   border: none;
   padding: 1rem;
   font-size: 1.5rem;
-  border-bottom: 1px solid rgb(162, 162, 162);
+  border-bottom: 1px solid variables.$grey600;
 }
 
 .input::-webkit-input-placeholder {
@@ -31,13 +33,13 @@
 .todoContainer {
   max-height: 22rem;
   overflow-y: auto;
-  background-color: #fff;
+  background-color: variables.$white100;
 }
 
 .todo {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgb(162, 162, 162);
+  border-bottom: 1px solid variables.$grey600;
   padding: 0.5rem 1rem;
 }
 
@@ -48,13 +50,13 @@
 .checkmark {
   width: 1.5rem;
   height: 1.5rem;
-  border: 1px solid #222;
+  border: 1px solid variables.$black700;
   display: inline-block;
   border-radius: 50%;
   margin-right: 1rem;
 }
 
 .todo input:checked + .checkmark {
-  border: 1px solid #dd2121;
-  background-color: #dd2121;
+  border: 1px solid variables.$red700;
+  background-color: variables.$red700;
 }
